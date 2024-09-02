@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: movie-service
+    sql:
+      init:
+        mode: ALWAYS
+
+    r2dbc:
+      url: r2dbc:postgresql://${P_HOST:localhost}:${P_PORT:15432}/mydatabase
+      username: myuser
+      password: secret
